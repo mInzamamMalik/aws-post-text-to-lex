@@ -23,10 +23,10 @@ AWS.config.update({region: 'us-east-1'});
 var lexruntime = new AWS.LexRuntime();
 
 var params = {
-  botAlias: 'prod', /* required */
-  botName: 'podcastbot', /* required */
-  inputText: 'I want to listen sports', /* required */
-  userId: 'STRING_VALUE', /* required */
+  botAlias: 'prod', /* required */ //you will get an alias name when you release your bot build
+  botName: 'podcastbot', /* required */ //it is just name of your bot
+  inputText: 'I want to listen sports', /* required */ //the text you want to say to bot
+  userId: 'STRING_VALUE', /* required */ //unique user id, so bot can identify each user at runtime
   sessionAttributes: {
     '<String>': 'STRING_VALUE',
     /* '<String>': ... */
